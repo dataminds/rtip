@@ -60,7 +60,7 @@ library(tm)
 read <- readPDF(control = list(text = "-layout"))
 ```
 
-#### 복수의 파일 어 데이터프레임 생성
+#### 복수의 파일 읽어 데이터프레임 생성
 ```
 if(!require(rio)) install.packages("rio")
 temp <- list.files(pattern = "*.csv")
