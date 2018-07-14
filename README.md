@@ -11,6 +11,16 @@ R coding(R작업에 유용한 코드 정리)
 if(!require(pkg)) install.packages("pkg")
 ```
 
+#### 객체명을 문자로 
+```
+object2string <- function(x) {
+  n <- deparse(substitute(x))
+  print(n)
+  }
+
+object2string(a)
+```
+
 
 ### Markdown
 see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
