@@ -37,6 +37,14 @@ library(tm)
 read <- readPDF(control = list(text = "-layout"))
 ```
 
+#### 복수의 파일 얽어 데이터프레임 생성
+```
+if(!require(rio)) install.packages("rio")
+temp <- list.files(pattern = "*.csv")
+df <- do.call(rbind, lapply(temp, import))
+```
+
+
 ### Markdown
 see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
