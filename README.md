@@ -21,6 +21,21 @@ object2string <- function(x) {
 object2string(a)
 ```
 
+#### PDF문서를 TXT문서로 
+```
+#https://medium.com/@CharlesBordet/how-to-extract-and-clean-data-from-pdf-files-in-r-da11964e252e
+
+if(!require(pdftools)) install.packages("pdftools")
+library(pdftools)
+text <- pdf_text("E:\\0Articles\\0book\\story\\Oatley_dream.pdf")
+text2 <- strsplit(text, "\n")
+head(text2[[1]])
+head(text2)
+
+if(!require(tm)) install.packages("tm")
+library(tm)
+read <- readPDF(control = list(text = "-layout"))
+```
 
 ### Markdown
 see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
