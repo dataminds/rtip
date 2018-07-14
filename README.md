@@ -23,6 +23,16 @@ if(length(new.pkgs)) {
   install.packages(new.pkgs, repos = "http://cran.rstudio.com")
 }
 ```
+#### 폴더 만들고 작업디렉토리 
+```
+mainDir <- "C:/test"
+subDir <- "outDir"
+dir.create(file.path(mainDir, subDir))
+setwd(file.path(mainDir, subDir))
+getwd()
+```
+
+
 
 #### 객체명을 문자로 
 ```
