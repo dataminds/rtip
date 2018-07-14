@@ -11,6 +11,19 @@ R coding(R작업에 유용한 코드 정리)
 if(!require(pkg)) install.packages("pkg")
 ```
 
+#### 복수의 패키지 한번에 설치
+```
+needed_pkgs <- c("nycflights13", "dplyr", "ggplot2", "knitr", 
+                 "okcupiddata", "dygraphs", "rmarkdown", "mosaic", 
+                 "ggplot2movies", "fivethirtyeight")
+
+new.pkgs <- needed_pkgs[!(needed_pkgs %in% installed.packages())]
+
+if(length(new.pkgs)) {
+  install.packages(new.pkgs, repos = "http://cran.rstudio.com")
+}
+```
+
 #### 객체명을 문자로 
 ```
 object2string <- function(x) {
