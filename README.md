@@ -1,5 +1,5 @@
-# rcode
-R coding(R작업에 유용한 코드 정리) 
+# r tip
+R작업에 유용한 코드 정리 
 
 - [online markdown editor](https://jbt.github.io/markdown-editor/) 
 - [online html editor](https://html-online.com/editor/) 
