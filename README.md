@@ -50,7 +50,7 @@ object2string(a)
 
 if(!require(pdftools)) install.packages("pdftools")
 library(pdftools)
-text <- pdf_text("E:\\0Articles\\0book\\story\\Oatley_dream.pdf")
+text <- pdf_text("file.pdf")
 text2 <- strsplit(text, "\n")
 head(text2[[1]])
 head(text2)
