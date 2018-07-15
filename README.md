@@ -1,8 +1,5 @@
 # r tip
-R작업에 유용한 코드 정리 
-
-- [online markdown editor](https://jbt.github.io/markdown-editor/) 
-- [online html editor](https://html-online.com/editor/) 
+R데이터 조작 및 작업에 유용한 코드 정리 
 
 #### 패키지 설치여부를 미리 확인해, 설치되지 않았을 때만 패키지 설치하기
 ```
@@ -28,24 +25,6 @@ subDir <- "outDir"
 dir.create(file.path(mainDir, subDir))
 setwd(file.path(mainDir, subDir))
 getwd()
-```
-
-
-
-#### 객체명을 문자로 
-```
-object2string <- function(x) {
-  n <- deparse(substitute(x))
-  print(n)
-  }
-
-object2string(a)
-```
-
-#### 문자를 객체명으로
-```
-varName <- names(iris)[1] 
-as.name(varName)
 ```
 
 #### PDF문서를 TXT문서로 
