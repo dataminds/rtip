@@ -44,6 +44,12 @@ object2string <- function(x) {
 object2string(a)
 ```
 
+#### 문자를 객체명으로
+```
+varName <- names(iris)[1] 
+as.name(varName)
+```
+
 #### PDF문서를 TXT문서로 
 ```
 #https://medium.com/@CharlesBordet/how-to-extract-and-clean-data-from-pdf-files-in-r-da11964e252e
