@@ -97,7 +97,7 @@ names(cor2.df[var])
 
 cor2.df <- cor2.df[var]
 cor2.df
-
+write.csv(cor2.df, "table_cor.csv")
 
 
 
