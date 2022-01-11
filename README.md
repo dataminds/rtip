@@ -58,7 +58,7 @@ see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-mark
 R마크다운 예시
 https://hyunyulhenry.github.io/lecture/200116_tidyverse/#8_문서화
 
-```
+
 8.1.1 YAML Header
 YAML Ain’t Markup Language
 제목, 출력물 형태, css 스타일 등을 정의
@@ -89,5 +89,5 @@ number_section: 제목에 숫자를 부여할지 여부
 header-includes: 헤드 부분에 들어갈 내용
 \usepackage: 사용할 latex
 출력 형태 별 YAML 예시: https://rmarkdown.rstudio.com/formats.html
-```
+
 
