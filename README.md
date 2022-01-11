@@ -54,3 +54,40 @@ df <- do.call(rbind, lapply(temp, import))
 ### Markdown
 see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+###
+R마크다운 예시
+https://hyunyulhenry.github.io/lecture/200116_tidyverse/#8_문서화
+
+```
+8.1.1 YAML Header
+YAML Ain’t Markup Language
+제목, 출력물 형태, css 스타일 등을 정의
+최상단에 위치하며, — 를 통해 정의
+:를 통해 구분하며, 각 하부 내용은 엔터 후 띄어쓰기 2칸을 입력
+---
+title: "R Markdown"
+author: "저자"
+date: "2020-01-01"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    number_sections: TRUE
+header-includes:
+- \usepackage{booktabs}
+---
+각 내용은 다음과 같음
+title: 제목
+author: 저자
+date: 날짜
+output: 출력 형태
+toc: table of content. 목차 생성 여부
+toc_float: 목차가 유동적으로 움직일지 여부
+toc_depth: 목차의 depth
+number_section: 제목에 숫자를 부여할지 여부
+header-includes: 헤드 부분에 들어갈 내용
+\usepackage: 사용할 latex
+출력 형태 별 YAML 예시: https://rmarkdown.rstudio.com/formats.html
+```
+
