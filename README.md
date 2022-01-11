@@ -65,7 +65,9 @@ YAML Ain’t Markup Language
 최상단에 위치하며, — 를 통해 정의
 :를 통해 구분하며, 각 하부 내용은 엔터 후 띄어쓰기 2칸을 입력
 ```
+
 ```
+---
 title: "R Markdown"
 author: "저자"
 date: "2020-01-01"
@@ -78,6 +80,7 @@ output:
 header-includes:
 - \usepackage{booktabs}
 ---
+```
 
 ```
 각 내용은 다음과 같음
