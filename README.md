@@ -1,6 +1,7 @@
 # r tip
 R데이터 조작 및 작업에 유용한 코드 정리 
 
+
 #### 패키지 설치여부를 미리 확인해, 설치되지 않았을 때만 패키지 설치하기
 ```
 if(!require(pkg)) install.packages("pkg")
@@ -97,3 +98,12 @@ header-includes: 헤드 부분에 들어갈 내용
 출력 형태 별 YAML 예시: https://rmarkdown.rstudio.com/formats.html
 ```
 
+###
+tidyverse파이프연산자 중간에 객체에 저장하는 방법. 
+중괄호 { }안에서 할당할때 꺽쇠 2개(->>)를 넣어주면 { ) 바깥 전역환경에 객체 할당. 
+```
+........( ) %>%
+{. ->> obj_name} %>%
+...( )
+
+```
