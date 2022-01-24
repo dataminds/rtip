@@ -1,6 +1,12 @@
 # r tip
 R데이터 조작 및 작업에 유용한 코드 정리 
 
+#### 소수점 포맷 자리수 scientific notation
+```
+options(digits = 숫자)
+options(scipen = 숫자)
+
+```
 
 #### 패키지 설치여부를 미리 확인해, 설치되지 않았을 때만 패키지 설치하기
 ```
